@@ -1,0 +1,11 @@
+{
+  "name": "networkAgent",
+  "version": "0.0.0",
+  "description": "Detect devices on the network",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src"
+  },
+  "author": "Grady Rogers",
+  "license": "ISC"
+}
