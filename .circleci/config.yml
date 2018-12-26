@@ -1,0 +1,25 @@
+version: 2
+jobs:
+
+  build:
+    working_directory: ~
+    docker:
+      image: debian:latest
+    steps:
+      - setup_remote_docker
+      - checkout
+      - run:
+          name: Build
+          command: docker build .
+
+workflows:
+  version: 2
+
+  deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+
