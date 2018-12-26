@@ -4,7 +4,7 @@ jobs:
   build:
     working_directory: ~/$CIRCLE_PROJECT_REPONAME
     docker:
-      - image: circleci/node:10-alpine-ram
+      - image: circleci/node:10.6-alpine-postgis-ram
     steps:
       - setup_remote_docker
       - checkout
