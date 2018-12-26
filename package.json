@@ -1,5 +1,5 @@
 {
-  "name": "networkAgent",
+  "name": "docker-network-agent",
   "version": "0.0.0",
   "description": "Detect devices on the network",
   "main": "src/index.js",
