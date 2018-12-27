@@ -4,13 +4,10 @@ jobs:
   build:
     working_directory: ~/docker-network-agent
     docker:
-      - image: circleci/node:10.6
+      - image: node:10.6
     steps:
-      - setup_remote_docker
       - checkout
-      - run:
-          name: Build
-          command: docker build .
+      - run: yarn
 
 workflows:
   version: 2
