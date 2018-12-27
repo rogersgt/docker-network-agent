@@ -7,6 +7,8 @@ Detect devices on the network
 # development.env
 LOG_LEVEL=DEBUG # Omit for less logging
 ```
+* Run `npm run dev`
 
 ### Produciton Use
 * Optionally create a `production.env` file
+* Run `npm start`
