@@ -7,7 +7,7 @@ jobs:
       - image: node:10.6
     steps:
       - checkout
-      - run: yarn
+      - run: npm install
 
 workflows:
   version: 2
